@@ -1,0 +1,10 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Connecting TikTok...</title></head>
+<body style="font-family:sans-serif;padding:40px">
+<p>Connecting TikTok to the Jullanar agent...</p>
+<script>
+  // TikTok sends its one-time sign-in code to this https page; it is passed straight on to the agent running on this computer.
+  location.replace("http://localhost:8766/callback" + location.search);
+</script>
+<p>If nothing happens, make sure the Jullanar TikTok agent's "Connect TikTok" is still waiting on your PC.</p>
+</body></html>
